@@ -2,6 +2,7 @@ import { CgNametag } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { useState } from "react";
+import logo from "../assets/logo.png";
 
 const nav = () => {
   const [toggle, setToggle] = useState(false);
@@ -22,26 +23,32 @@ const nav = () => {
             href="#"
             className="text-white font-mono text-3xl tracking-wider flex items-center"
           >
-            <CgNametag /> WebdeV
+            <img
+              src={logo}
+              alt=""
+              width={120}
+              height={120}
+              className="rounded-full border-4 border-gray-700 p-1"
+            />
           </a>
         </div>
         <div className="space-x-4">
           <div className="ssm:hidden lg:block space-x-2">
             <a
               href="#"
-              className="text-white hover:bg-fuchsia-700 rounded-full px-5 py-2 text-xl"
+              className="text-white hover:bg-gray-700 rounded-full px-5 py-2 text-xl"
             >
               Skills
             </a>
             <a
               href="#"
-              className="text-white hover:bg-fuchsia-700 rounded-full px-5 py-2 text-xl"
+              className="text-white hover:bg-gray-700 rounded-full px-5 py-2 text-xl"
             >
               Pojects
             </a>
             <a
               href="#"
-              className="text-white hover:bg-fuchsia-700 rounded-full px-5 py-2 text-xl"
+              className="text-white hover:bg-gray-700 rounded-full px-5 py-2 text-xl"
             >
               Testimonials
             </a>
