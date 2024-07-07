@@ -9,6 +9,10 @@ export default {
       lg: "1024px",
     },
     extend: {
+      lineHeight: {
+        "extra-loose": "2.5",
+        12: "3rem",
+      },
       keyframes: {
         typing: {
           "0%": {

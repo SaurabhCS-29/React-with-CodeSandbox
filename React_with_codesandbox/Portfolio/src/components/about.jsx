@@ -27,18 +27,31 @@ const about = () => {
         </div>
       </div>
       <div
-        className="flex justify-around items-center p-10 space-x-10 
-        lg:flex-row ssm:flex-col ssm:space-y-10 text-white"
+        className="flex justify-around text-white pb-10 font-mono leading-loose
+        lg:flex-row 
+        ssm:flex-col ssm:items-center ssm:w-full"
       >
-        <div>
-          <h2>Eduction</h2>
-          <p>Bachelor of Computer Application (BCA)</p>
-          <IoSchoolOutline size={50} />
+        <div
+          className="bg-orange-500 w-80 h-auto p-5 rounded-lg mb-10 
+          hover:bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 inline-block
+          transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 shadow-lg hover:shadow-orange-800/100"
+        >
+          <h2 className="text-3xl uppercase">Eduction</h2>
+          <p className="text-lg">Bachelor of Computer Application (BCA)</p>
+          <IoSchoolOutline size={60} className="m-3" />
         </div>
-        <div>
-          <h2>Experience</h2>
-          <p></p>
-          <GiRibbonMedal size={50} />
+        <div
+          className="bg-orange-500 w-80 h-auto p-5 rounded-lg mb-10
+           hover:bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 inline-block
+           transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 shadow-lg hover:shadow-orange-800/100"
+        >
+          <h2 className="text-3xl uppercase">Experience</h2>
+          <p className="text-lg">
+            Unified Mentor Pvt Ltd.
+            <br />
+            Web Developer
+          </p>
+          <GiRibbonMedal size={60} className="m-3" />
         </div>
       </div>
     </>
